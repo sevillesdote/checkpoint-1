@@ -1,3 +1,26 @@
+.topbox{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: black;
+}
+.topbox div, .topbox li, .topbox ul, .topbox a, .topbox nav{
+  padding: 5px 10px;
+  float: left;
+  box-sizing: border-box;
+}
+.text-nav, .icon-nav {
+  float: left;
+  height: 100px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* main{
+  margin-top: 100px;
+} */
 em{
   color: #FF0000;
 }
