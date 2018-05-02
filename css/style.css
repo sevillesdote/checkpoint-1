@@ -7,23 +7,28 @@ main{
 a{
   text-decoration: none;
   color: ghostwhite;
-  /*This makes the text inside buttons white too... may need to move this style*/
+  /*This makes the text of links inside buttons white too... i made a child
+  selector specifically for button links*/
 }
 .topbox{
   position: fixed;
   display: flex;
+  align-content: center;
+/* why isn't align-content: center working? */
   justify-content: center;
-  align-items: stretch;
   flex-wrap: wrap;
   margin: auto 0;
   width: 100%;
   min-height: 35px;
+  background-color: rgba(0,0,0,0.8);
   font-size: 150%;
-  background-color: #000;
   color: ghostwhite;
 }
-.text-nav, .icon-nav {
+.text-nav{
   float: left;
+}
+.icon-nav {
+  float: right;
 }
 .topbox li, footer li{
   float: left;
@@ -49,21 +54,26 @@ path{
   clear: both;
   display: table;
 }
-.op-sys-toggle{
+.op-sys {
   display: flex;
+  justify-content: center;
+}
+.toggle{
   float:left;
   height: 50px;
-  width: 300px;
-  border: 2px solid #0078D7;
-  border-radius: 10px 0 0 10px;
-  margin-right: 5px;
+  width: 200px;
   font-size: 150%;
-  color: #0078D7;
-  align-items: center;
+}
+.toggle-left{
+  border-radius: 10px 0 0 10px;
+  border-width: 5px 0 5px 5px;
+}
+.toggle-right{
+  border-radius: 0 10px 10px 0;
+  border-width: 5px 5px 5px 0;
 }
 .windows{
-  border: 2px solid #0078D7;
-  border-radius: 10px 0 0 10px;
+  border: solid #0078D7;
   color: #0078D7;
 }
 .windows:hover{
@@ -71,38 +81,76 @@ path{
   color: #FFFFFF;
 }
 .mac{
-  border: 2px solid #DCDDDF;
-  border-radius: 0 10px 10px 0;
+  border: solid #DCDDDF;
   color: #DCDDDF;
 }
 .mac:hover{
   background-color: #DCDDDF;
   color: #000000;
 }
-
+label{
+  display: flex;
+  align-items: center;
+}
+input[type="radio"]{
+  display: none;
+  height: 50px;
+  width: 200px;
+}
+.trial {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.trial button{
+  float:left;
+  height: 75px;
+  min-width: 400px;
+  border: 2px solid orange;
+  border-radius: 10px;
+  margin-right: 5px;
+  font-size: 200%;
+  color: orange;
+  background-color: transparent;
+}
+.trial button:hover{
+  background-color: orange;
+  color: #000000;
+}
+section{
+  margin-bottom: 125px;
+}
 h1{
   text-align: center;
   font-size: 600%;
-  line-height: 3em;
   color: orange;
+  margin: 0.5em 0;
 }
 p{
   font-size: 150%;
-  line-height: 2.25em;
+  line-height: 1.5em;
   margin: 0.75em 0;
   }
 h2{
   font-size: 300%;
-  line-height: 3em;
+  margin: 1em 0;
 }
-h2:nth-of-type(3n+1) {
-  color: blue;
+/* I couldn't get any nth-of-type styling to work, so I created classes instead. */
+/* h2:nth-of-type(even) {text-align: right;} */
+/* h2:nth-of-type(3n+1) {color: aqua;} */
+/* h2:nth-of-type(3n+2)  {color: chartreuse;} */
+/* h2:nth-of-type(3n+3) {color: magenta;} */
+.even-header {
+  text-align: right;
 }
-h2:nth-of-type(3n+2)  {
-  color: green;
+.every-1st-of-3 {
+  color: aqua;
 }
-h2:nth-of-type(3n+3) {
-  color: pink;
+.every-2nd-of-3 {
+  color: chartreuse;
+}
+.every-3rd-of-3 {
+  color: fuchsia;
 }
 em{
   color: #FF0000;
@@ -110,21 +158,10 @@ em{
 }
 footer{
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+  justify-content: center;
   flex-wrap: wrap;
   margin: auto 0;
   padding: 50px 0;
   width: 100%;
   background-color: #000;
-  color: ghostwhite;
-}
-.footer-text-nav li{
-  float: none;
-  list-style-type: none;
-  padding: 5px 10px;
-  color: ghostwhite;
-}
-.footer-text-nav{
-  float: none;
 }
