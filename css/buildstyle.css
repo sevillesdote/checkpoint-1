@@ -1,21 +1,10 @@
-/* main{
-  margin: auto 0;
-  padding: 100px 150px;
-  background-color: #262626;
-  color: ghostwhite;
-} */
-a{
-  text-decoration: none;
-  color: ghostwhite;
-  /*This makes the text of links inside buttons white too... i made a child
-  selector specifically for button links*/
-}
 .release-nav{
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-content: center;
   margin: auto 0;
+  padding: 0 2px;
   width: 100%;
   min-height: 35px;
   background-color: rgba(0,0,0,0.8);
@@ -25,7 +14,7 @@ img{
   float: left;
   width: 50px;
   height: 50px;
-  padding: 2px;
+  padding: 4px;
 }
 li{
   float: left;
@@ -46,6 +35,7 @@ li{
   float: right;
   height: 25px;
   width: 50px;
+  margin: 0 2px;
   font-size: 15px;
   text-align: center;
   background-color: orange;
