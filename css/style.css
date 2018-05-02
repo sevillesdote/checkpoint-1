@@ -14,7 +14,7 @@ a{
   position: fixed;
   display: flex;
   align-content: center;
-/* why isn't align-content: center working? */
+/* why isn't align-content: center working? The text links aren't centered.*/
   justify-content: center;
   flex-wrap: wrap;
   margin: auto 0;
