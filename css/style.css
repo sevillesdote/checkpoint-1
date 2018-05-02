@@ -49,6 +49,37 @@ path{
   clear: both;
   display: table;
 }
+.op-sys-toggle{
+  display: flex;
+  float:left;
+  height: 50px;
+  width: 300px;
+  border: 2px solid #0078D7;
+  border-radius: 10px 0 0 10px;
+  margin-right: 5px;
+  font-size: 150%;
+  color: #0078D7;
+  align-items: center;
+}
+.windows{
+  border: 2px solid #0078D7;
+  border-radius: 10px 0 0 10px;
+  color: #0078D7;
+}
+.windows:hover{
+  background-color: #0078D7;
+  color: #FFFFFF;
+}
+.mac{
+  border: 2px solid #DCDDDF;
+  border-radius: 0 10px 10px 0;
+  color: #DCDDDF;
+}
+.mac:hover{
+  background-color: #DCDDDF;
+  color: #000000;
+}
+
 h1{
   text-align: center;
   font-size: 600%;

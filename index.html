@@ -88,18 +88,20 @@
         <li><a href="https://www.beatport.com/desktop" target="_blank"><em>https://www.beatport.com/desktop</em></a></li>
       </ul>
       <section>
-        <p>
-          <label for="windows">
-            <input type="radio" name="op-sys" id="windows"
+        <div class="op-sys-toggle windows">
+            <label for="windows">
+              <input type="radio" name="op-sys" id="windows"
             value="Windows" checked>Windows
-          </label>
-          <label for="mac">
-            <input type="radio" name="op-sys" id="mac"
-            value="Mac">Mac
-            <p>
-              <em>If there's time, try turning these radio buttons into a single wide side-by-side 'toggle' button that turns the 'try' links a different color. blue w white text for pc, white w black text for mac, black w gray text for 'untoggled' option</em>
-            </p>
-          </label>
+            </label>
+          </div>
+          <div class="op-sys-toggle mac">
+            <label for="mac">
+              <input type="radio" name="op-sys" id="mac"
+              value="Mac">Mac
+            </label>
+          </div>
+        <p>
+          <em>If there's time, try turning these radio buttons into a single wide side-by-side 'toggle' button that turns the 'try' links a different color. blue w white text for pc, white w black text for mac, black w gray text for 'untoggled' option</em>
         </p>
         <p>
           <button type="button" name="app">
