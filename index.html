@@ -1,10 +1,18 @@
 <!DOCTYPE html>
+<!-- questions:
+how to vertically center text navs in header... align-items: center not working yet
+(i made a pen at https://codepen.io/sevillesdote/pen/gzWmzo)
+why isn't nth-of-type working
+(i made a pen at https://codepen.io/sevillesdote/pen/vjZLZK)
+how to auto-heighten gradient overlay -->
 <html lang="en" dir="ltr" xmlns="http://www.w3.org/2000/svg">
   <head>
     <meta charset="utf-8">
     <title>aug, Your Audio Aggregator</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round"
+    rel="stylesheet">
   </head>
   <body>
     <header>
@@ -13,7 +21,7 @@
           <div class="text-nav">
             <ul>
               <li>
-                <a href="#">What is aug?</a>
+                <a href="#">What is <em class="aug-em">aug?</em></a>
               </li>
               <li>
                 <a href="##">Try the app</a>
@@ -88,9 +96,6 @@
         <li><a href="https://www.beatport.com/desktop" target="_blank"><em>https://www.beatport.com/desktop</em></a></li>
       </ul>
       <section>
-        <p>
-          <em>If there's time, try turning these radio buttons into a single wide side-by-side 'toggle' button that turns the 'try' links a different color. blue w white text for pc, white w black text for mac, black w gray text for 'untoggled' option</em>
-        </p>
         <div class="op-sys clearfix">
         <div class="op-sys toggle toggle-left windows">
           <label for="windows">
@@ -119,19 +124,22 @@ button links, but i have to move on. -->
               </button>
             </a>
         </div>
+        <div class="img-gradient">
+        <img src="builds/build-images/build1a.png" alt="aug screenshot">
+        </div>
         </p>
       </section>
       <section>
         <h1>What is aug?</h1>
         <p>
-          aug keeps track of the songs you listen to online, and creates a
+          <em class="aug-em">aug</em> keeps track of the songs you listen to online, and creates a
           'mosaic' dashboard from each release's album artwork. You can hover
           over each release to reveal more info about the songs you've listened
           to.
         </p>
         <p>
-          aug can recognize songs from just about any online music source.
-          Whatever the song, whatever the source, aug remembers for you... all
+          <em class="aug-em">aug</em> can recognize songs from just about any online music source.
+          Whatever the song, whatever the source, <em class="aug-em">aug</em> remembers for you... all
           in one place.
         </p>
         <p>
@@ -140,7 +148,7 @@ button links, but i have to move on. -->
       </section>
       <section>
         <h2 class="every-1st-of-3">See what you hear.</h2>
-        <p>aug's main dashboard is a simple mosaic of all the releases you've
+        <p><em class="aug-em">aug's</em> main dashboard is a simple mosaic of all the releases you've
           listened to online. Hover over any release to see which tracks you
           heard from that release, when, how many times, at which site(s) and
           for how long.
@@ -148,12 +156,12 @@ button links, but i have to move on. -->
         <p>
           <em>[expanded per-release detail: which tracks {tracks detented to top of list]; equal width progress bars with timestamp at the end; filled in with percentage of the track listened to {maybe in pink} and a listened-to timestamp. maybe repeat this view as a close up with a caption explaining "the time stamp helps you identify whether you listened to auditions at an online store, or the entire song at a streaming site."]</em>
         </p>
-        <p>Configure aug the way <em>you</em> want. Organize your mosaic by when,
+        <p>Configure <em class="aug-em">aug</em> the way <em>you</em> want. Organize your mosaic by when,
           where or how often you listen online.
         </p>
       </section>
       <section>
-        <h2 class="every-2nd-of-3 even-header">You pick what aug hears.</h2>
+        <h2 class="every-2nd-of-3 even-header">You pick what <em class="aug-em">aug</em> hears.</h2>
         <p>Hide, block, delete or turn tracking on and off for certain sites,
           releases, even individual songs.
         </p>
@@ -163,10 +171,10 @@ button links, but i have to move on. -->
       </section>
       <section>
         <h2 class="every-3rd-of-3">Easily explore more songs, releases & artists.</h2>
-        <p>When you hear stuff you like, aug makes it easier than ever to
-          explore more of the release and the artist. aug can automatically link you to
+        <p>When you hear stuff you like, <em class="aug-em">aug</em> makes it easier than ever to
+          explore more of the release and the artist. <em class="aug-em">aug</em> can automatically link you to
           the full album release for that song, at your choice of streaming
-          sites or online music stores. When you visit those sites, aug can
+          sites or online music stores. When you visit those sites, <em class="aug-em">aug</em> can
           keep track of which songs you've already heard and which ones may be
           new to you, right in the external site.
         </p>
@@ -176,10 +184,10 @@ button links, but i have to move on. -->
       </section>
       <section>
         <h2 class="every-1st-of-3 even-header">Curate your auditions.</h2>
-        <p>Like to 'try before you buy?' aug can curate playlists at online
+        <p>Like to 'try before you buy?' <em class="aug-em">aug</em> can curate playlists at online
           stores to prioritize songs you haven't heard yet, or even remove the
           songs you've already heard. When you visit the most popular online
-          DJ stores like Juno, Beatport, Bleep or Clone, aug can flag tracks
+          DJ stores like Juno, Beatport, Bleep or Clone, <em class="aug-em">aug</em> can flag tracks
           you've already heard as visited links, so you can focus on the new
           stuff.
         </p>
@@ -192,7 +200,7 @@ button links, but i have to move on. -->
         <p>You've heard that song enough to last you a lifetime. Everybody else
           seems to love it (why?!), but guess what... you HATE it. Want to stop
           hearing it?</p>
-        <p>You can ghost songs, releases or even artists, which will
+        <p><em class="aug-em">aug</em> lets you ghost songs, releases or even artists, which will
           automatically skip them in any online playlist, no matter the site or
           app. Your exes will still display, so you can easily unghost them
           with one click. Or you can unghost once, to check if they've changed
@@ -206,11 +214,11 @@ button links, but i have to move on. -->
         </p>
       </section>
       <section>
-        <h2 class="every-3rd-of-3 even-header">aug isn't just for online music stores... it's for the whole web.</h2>
-        <p>aug works on free streaming sites too. soundcloud, youtube, spotify
-          free or premium... all are compatible with aug. If a song can be
+        <h2 class="every-3rd-of-3 even-header"><em class="aug-em">aug</em> isn't just for online music stores... it's for the whole web.</h2>
+        <p><em class="aug-em">aug</em> works on free streaming sites too. soundcloud, youtube, spotify
+          free or premium... all are compatible with <em class="aug-em">aug</em>. If a song can be
           identified by popular song recognition apps like shazam or soundhound,
-          it will be recognized by aug.
+          it will be recognized by <em class="aug-em">aug</em>.
         </p>
         <p>Both the app and the browser plug-in recognize everything you listen to
           online, regardless of whether you listen in a proprietary app or a
@@ -219,9 +227,9 @@ button links, but i have to move on. -->
       </section>
       <section>
         <h2 class="every-1st-of-3">Your audio, your privacy.</h2>
-        <p>aug never sells your individual data or shares it with any external
-          companies. We do share aggregate data with other aug users, including
-          you, about the most tracked songs among all of aug's users on our Charts.
+        <p><em class="aug-em">aug</em> never sells your individual data or shares it with any external
+          companies. We do share aggregate data with other <em class="aug-em">aug</em> users, including
+          you, about the most tracked songs among all of <em class="aug-em">aug's</em> users on our Charts.
           We'll never tell anyone else about your favorite guilty-pleasure song...
           we promise.
         </p>
