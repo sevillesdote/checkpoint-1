@@ -5,9 +5,8 @@
     <title>aug, Your Audio Aggregator</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round"
-    rel="stylesheet">
-  </head>
+<link href="https://fonts.googleapis.com/css?family=Varela|Varela+Round"
+rel="stylesheet">  </head>
   <body>
     <header>
       <div class="topbox clearfix">
@@ -84,11 +83,6 @@
       </div>
     </header>
     <main class="clearfix">
-      <ul>
-        <li><em>similar sites:</em></li>
-        <li><a href="https://www.algoriddim.com/" target="_blank"><em>https://www.algoriddim.com/</em></a></li>
-        <li><a href="https://www.beatport.com/desktop" target="_blank"><em>https://www.beatport.com/desktop</em></a></li>
-      </ul>
       <section>
         <div class="op-sys clearfix">
         <div class="op-sys toggle toggle-left windows">
@@ -118,10 +112,17 @@ button links, but i have to move on. -->
               </button>
             </a>
         </div>
-        <div class="img-gradient">
-        <img src="builds/build-images/build1a.png" alt="aug screenshot">
+        <a href="builds/build1.html" target="_blank">
+        <!-- can all <a> tags be set to open in a new tab in css? i couldn't
+      get it to work. maybe because that is a behavior and not a display. -->
+        <div class="img-gradient"
+        title="(psst... click on the pic to see the build i made for this screenshot)">
+          <img src="builds/build-images/build1a.png" alt="aug screenshot">
+          <!-- <label for="build">
+            (psst... click on the pic to see the build i made for this screenshot)
+          </label> -->
         </div>
-        </p>
+      </a>
       </section>
       <section>
         <h1>What is aug?</h1>
@@ -232,6 +233,8 @@ button links, but i have to move on. -->
           <li>
             <a href="###">Downloads</a>
           </li>
+        </ul>
+        <ul>
           <li>
             <a href="####">Driver updates</a>
           </li>
@@ -241,9 +244,19 @@ button links, but i have to move on. -->
           <li>
             <a href="####">Privacy policy</a>
           </li>
+        </ul>
+        <ul class="easter-egg">
+          <li>
+            <div class="egg"></div>
+          easter eggs
+          </li>
+          <li>
+            <a href="similarsites.html" target="_blank">
+            (inspiration sites)</a>
+          </li>
           <li>
             <a href="builds/all-builds.html" target="_blank">
-              <em>(display-only builds for screenshots)</em></a>
+            (display-only builds for screenshots)</a>
           </li>
         </ul>
       </div>
