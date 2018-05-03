@@ -29,7 +29,7 @@ img{
   width: 150px;
   height: 150px;
 }
-.focus-li{
+.focus-li {
   float: left;
   display: flex;
   align-items: center;
@@ -50,14 +50,51 @@ img{
   border-top: 83px solid transparent;
   border-bottom: 83px solid transparent;
 }
-#triangle-left {
+.triangle-left {
   float: left;
 	width: 0;
 	height: 0;
-  /* padding: 1px; */
 	border-top: 10px solid transparent;
 	border-right: 20px solid #262626;
 	border-bottom: 10px solid transparent;
+}
+.triangle-right {
+  float: left;
+  align-items: center;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 20px solid #262626;
+	border-bottom: 10px solid transparent;
+}
+.info{
+  display: flex;
+  float: left;
+  width: 300px;
+  /* i wonder how i can inherit the height from the img nested in the same class?
+  in this case it's .focus-img */
+  height: 150px;
+  margin: 4px;
+  border-radius: 4px 0 0 4px;
+  background-color: #262626;
+}
+.title-info{
+
+}
+.artist{
+
+}
+.release-title{
+
+}
+.divider {
+
+}
+.track-info{
+
+}
+.track-bar{
+
 }
 li{
   float: left;
@@ -98,17 +135,27 @@ li{
   font-family: 'Varela', sans-serif;
   color: ghostwhite;
   font-size: 12px;
-  /* i couldn't figure out how to use flex to automate the width of the tooltip
-  box, and i was running out of time, so i just manually stuck it in there. */
-  width: 135px;
-  text-align: right;
   padding: 3px 5px;
   margin-left: 3px;
   border-radius: 4px;
+}
+.tooltip-build-2 {
+  /* i couldn't figure out how to use flex to automate the width of the tooltip
+  box, and i was running out of time, so i just manually stuck it in there
+  and customized it to each build. obviously this is cheating! */
+  width: 135px;
+  right: 110%;
+  text-align: right;
+}
+.tooltip-build-3 {
+  width: 145px;
+  left: 105%;
+  text-align: left;
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
 .listened {
   font-weight: bold;
-  color: magenta;}
+  color: magenta;
+}
