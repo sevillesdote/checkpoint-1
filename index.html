@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!-- still need:
+  accessibility check
+  styling for visited/ hovered etc. links
+  remove <em> styling from css once all the comments have been accounted for
+ -->
 <html lang="en" dir="ltr" xmlns="http://www.w3.org/2000/svg">
   <head>
     <meta charset="utf-8">
@@ -112,17 +117,10 @@ button links, but i have to move on. -->
               </button>
             </a>
         </div>
-        <a href="builds/build1.html" target="_blank">
-        <!-- can all <a> tags be set to open in a new tab in css? i couldn't
-      get it to work. maybe because that is a behavior and not a display. -->
-        <div class="img-gradient"
+        <a  class="img-gradient" href="builds/build1.html" target="_blank"
         title="(psst... click on the pic to see the build i made for this screenshot)">
           <img src="builds/build-images/build1a.png" alt="aug screenshot">
-          <!-- <label for="build">
-            (psst... click on the pic to see the build i made for this screenshot)
-          </label> -->
-        </div>
-      </a>
+        </a>
       </section>
       <section>
         <h1>What is aug?</h1>
@@ -138,9 +136,10 @@ button links, but i have to move on. -->
           <em class="aug-em">aug</em> remembers for you, all
           in one place.
         </p>
-        <div class="img-gradient">
-        <img src="builds/build-images/build2a.png" alt="aug screenshot">
-        </div>
+        <a  class="img-gradient" href="builds/build2.html" target="_blank"
+        title="(psst... click on the pic to see the build i made for this screenshot)">
+            <img src="builds/build-images/build2a.png" alt="aug screenshot">
+        </a>
         <h2>See what you hear.</h2>
         <p><em class="aug-em">aug's</em> main dashboard is a simple mosaic of all the releases you've
           listened to online. Hover over any release to see which tracks you

@@ -1,3 +1,7 @@
+/* to do:
+(if time) figure out how to change tooltip box to flex auto-width
+
+*/
 html{
   background: url(../builds/build-images/google-background.png) no-repeat center center fixed;
   background-size: 100%;
@@ -88,15 +92,15 @@ li{
   /* i couldn't figure out how to use flex to auto-center the tooltip box (which
   might require javascript anyway), and i was running out of time, so i just manually
   centered it using the top property. */
-  top: 68px;
+  top: 60px;
   right: 110%;
   background-color: rgba(0, 0, 0, 0.77);
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela', sans-serif;
   color: ghostwhite;
   font-size: 12px;
   /* i couldn't figure out how to use flex to automate the width of the tooltip
   box, and i was running out of time, so i just manually stuck it in there. */
-  width: 125px;
+  width: 135px;
   text-align: right;
   padding: 3px 5px;
   margin-left: 3px;

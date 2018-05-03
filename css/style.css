@@ -1,3 +1,5 @@
+/* to do:
+(if time) figure out how to change tooltip box to flex auto-width */
 html{
   font-family: 'Varela', sans-serif;
 }
@@ -151,7 +153,7 @@ input[type="radio"]{
 }
 /* this creates a margin below a <p> whenever it precedes an image that has the
 .img-gradient class applied */
- p ~ .img-gradient{
+p ~ .img-gradient{
   margin: 50px 0 0 0;
 }
 h1{
