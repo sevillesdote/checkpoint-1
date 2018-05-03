@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!-- questions:
-how to vertically center text navs in header... align-items: center not working yet
-(i made a pen at https://codepen.io/sevillesdote/pen/gzWmzo)
-why isn't nth-of-type working
-(i made a pen at https://codepen.io/sevillesdote/pen/vjZLZK)
-how to auto-heighten gradient overlay -->
 <html lang="en" dir="ltr" xmlns="http://www.w3.org/2000/svg">
   <head>
     <meta charset="utf-8">
@@ -139,15 +133,14 @@ button links, but i have to move on. -->
         </p>
         <p>
           <em class="aug-em">aug</em> can recognize songs from just about any online music source.
-          Whatever the song, whatever the source, <em class="aug-em">aug</em> remembers for you... all
+          Whatever the song, whatever the source, wherever you listen online...
+          <em class="aug-em">aug</em> remembers for you, all
           in one place.
         </p>
-        <p>
-          <em>[pic of the mosiac view, with one hover callout showing dimmed sections of heard tracks with an arrow to the right]</em>
-        </p>
-      </section>
-      <section>
-        <h2 class="every-1st-of-3">See what you hear.</h2>
+        <div class="img-gradient">
+        <img src="builds/build-images/build2a.png" alt="aug screenshot">
+        </div>
+        <h2>See what you hear.</h2>
         <p><em class="aug-em">aug's</em> main dashboard is a simple mosaic of all the releases you've
           listened to online. Hover over any release to see which tracks you
           heard from that release, when, how many times, at which site(s) and
@@ -159,18 +152,18 @@ button links, but i have to move on. -->
         <p>Configure <em class="aug-em">aug</em> the way <em>you</em> want. Organize your mosaic by when,
           where or how often you listen online.
         </p>
-      </section>
-      <section>
-        <h2 class="every-2nd-of-3 even-header">You pick what <em class="aug-em">aug</em> hears.</h2>
+      <!-- You were right Dinh, I took out the <section> tags dividing the h2s and
+      now the nth-of-type classes are working :) -->
+      <!-- </section>
+      <section> -->
+        <h2>You pick what <em class="aug-em">aug</em> hears.</h2>
         <p>Hide, block, delete or turn tracking on and off for certain sites,
           releases, even individual songs.
         </p>
         <p>
           <em>[pic of settings? if i have time. maybe mock this part up in figma instead of creating in .html to save time.]</em>
         </p>
-      </section>
-      <section>
-        <h2 class="every-3rd-of-3">Easily explore more songs, releases & artists.</h2>
+        <h2>Easily explore more songs, releases & artists.</h2>
         <p>When you hear stuff you like, <em class="aug-em">aug</em> makes it easier than ever to
           explore more of the release and the artist. <em class="aug-em">aug</em> can automatically link you to
           the full album release for that song, at your choice of streaming
@@ -181,9 +174,7 @@ button links, but i have to move on. -->
         <p>
           <em>[pic of beatport, maybe itunes with links visited]</em>
         </p>
-      </section>
-      <section>
-        <h2 class="every-1st-of-3 even-header">Curate your auditions.</h2>
+        <h2>Curate your auditions.</h2>
         <p>Like to 'try before you buy?' <em class="aug-em">aug</em> can curate playlists at online
           stores to prioritize songs you haven't heard yet, or even remove the
           songs you've already heard. When you visit the most popular online
@@ -194,9 +185,7 @@ button links, but i have to move on. -->
         <p>
           <em>[can i superimpose tool tips in juno playlist? too complicated in the short term?]</em>
         </p>
-      </section>
-      <section>
-        <h2 class="every-2nd-of-3">Break up with the songs you hate!</h2>
+        <h2>Break up with the songs you hate!</h2>
         <p>You've heard that song enough to last you a lifetime. Everybody else
           seems to love it (why?!), but guess what... you HATE it. Want to stop
           hearing it?</p>
@@ -212,9 +201,7 @@ button links, but i have to move on. -->
         <p>
           <em>[show ghosting {as a broken heart icon maybe? scooby doo ghost}  with an "unghost" link in the hover, maybe a date: you ghosted track name on date. unghost once; unghost]</em>
         </p>
-      </section>
-      <section>
-        <h2 class="every-3rd-of-3 even-header"><em class="aug-em">aug</em> isn't just for online music stores... it's for the whole web.</h2>
+        <h2><em class="aug-em">aug</em> isn't just for online music stores... it's for the whole web.</h2>
         <p><em class="aug-em">aug</em> works on free streaming sites too. soundcloud, youtube, spotify
           free or premium... all are compatible with <em class="aug-em">aug</em>. If a song can be
           identified by popular song recognition apps like shazam or soundhound,
@@ -224,14 +211,12 @@ button links, but i have to move on. -->
           online, regardless of whether you listen in a proprietary app or a
           different browser.
         </p>
-      </section>
-      <section>
-        <h2 class="every-1st-of-3">Your audio, your privacy.</h2>
+        <h2>Your audio, your privacy.</h2>
         <p><em class="aug-em">aug</em> never sells your individual data or shares it with any external
           companies. We do share aggregate data with other <em class="aug-em">aug</em> users, including
           you, about the most tracked songs among all of <em class="aug-em">aug's</em> users on our Charts.
-          We'll never tell anyone else about your favorite guilty-pleasure song...
-          we promise.
+          We'll never tell anyone else about your favorite guilty-pleasure song
+          (we promise!).
         </p>
       </section>
     </main>
@@ -257,7 +242,8 @@ button links, but i have to move on. -->
             <a href="####">Privacy policy</a>
           </li>
           <li>
-            <a href="builds/build1.html">(display builds for screenshots)</a>
+            <a href="builds/all-builds.html" target="_blank">
+              <em>(display builds for screenshots)</em></a>
           </li>
         </ul>
       </div>

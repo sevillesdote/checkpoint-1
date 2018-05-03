@@ -20,6 +20,7 @@ a{
 /* why isn't align-content: center working? The text links aren't centered.*/
   justify-content: center;
   flex-wrap: wrap;
+  z-index: 1;
   margin: auto 0;
   width: 100%;
   min-height: 35px;
@@ -35,9 +36,11 @@ a{
 }
 .topbox li, footer li{
   float: left;
+  display: flex;
+  align-items: stretch;
   box-sizing: border-box;
   list-style-type: none;
-  padding: 5px 10px;
+  padding: 10px;
   color: ghostwhite;
 }
 .topbox ul{
@@ -103,7 +106,7 @@ input[type="radio"]{
 .trial {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 50px;
 }
 .trial button{
   float:left;
@@ -137,11 +140,12 @@ input[type="radio"]{
 .img-gradient img{
   display: block;
   z-index: -1;
-  margin: 50px 0px;
   width: 100%;
 }
-section{
-  margin-bottom: 125px;
+/* this creates a margin below a paragraph when it precedes an image (with the
+.img-gradient class applied) */
+ p ~ .img-gradient{
+  margin: 50px 0 0 0;
 }
 h1{
   text-align: center;
@@ -159,11 +163,11 @@ h2{
   margin: 1em 0;
 }
 /* I couldn't get any nth-of-type styling to work, so I created classes instead. */
-/* h2:nth-of-type(even) {text-align: right;} */
-/* h2:nth-of-type(3n+1) {color: aqua;} */
-/* h2:nth-of-type(3n+2)  {color: chartreuse;} */
-/* h2:nth-of-type(3n+3) {color: magenta;} */
-.even-header {
+h2:nth-of-type(even) {text-align: right;}
+h2:nth-of-type(3n+1) {color: aqua;}
+h2:nth-of-type(3n+2)  {color: chartreuse;}
+h2:nth-of-type(3n+3) {color: magenta;}
+/* .even-header {
   text-align: right;
 }
 .every-1st-of-3 {
@@ -174,7 +178,7 @@ h2{
 }
 .every-3rd-of-3 {
   color: fuchsia;
-}
+} */
 em{
   color: #FF0000;
   font-style: italic;
