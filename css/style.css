@@ -142,8 +142,8 @@ input[type="radio"]{
   z-index: -1;
   width: 100%;
 }
-/* this creates a margin below a paragraph when it precedes an image (with the
-.img-gradient class applied) */
+/* this creates a margin below a <p> whenever it precedes an image that has the
+.img-gradient class applied */
  p ~ .img-gradient{
   margin: 50px 0 0 0;
 }
@@ -162,11 +162,12 @@ h2{
   font-size: 300%;
   margin: 1em 0;
 }
-/* I couldn't get any nth-of-type styling to work, so I created classes instead. */
 h2:nth-of-type(even) {text-align: right;}
 h2:nth-of-type(3n+1) {color: aqua;}
-h2:nth-of-type(3n+2)  {color: chartreuse;}
+h2:nth-of-type(3n+2) {color: chartreuse;}
 h2:nth-of-type(3n+3) {color: magenta;}
+/* I got the nth-of-type styling to work by removing the secions, so these
+classes below weren't needed any more. */
 /* .even-header {
   text-align: right;
 }

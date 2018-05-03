@@ -55,10 +55,6 @@ img{
 	border-right: 20px solid #262626;
 	border-bottom: 10px solid transparent;
 }
-
-/* .focus-img:hover{
-  transform: scale(3);
-} */
 li{
   float: left;
   box-sizing: border-box;
@@ -85,3 +81,30 @@ li{
   border-radius: 0 0 4px 4px;
   color: rgba(0,0,0,0.8);
 }
+.tooltip .tooltiptext {
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+  /* i couldn't figure out how to use flex to auto-center the tooltip box (which
+  might require javascript anyway), and i was running out of time, so i just manually
+  centered it using the top property. */
+  top: 68px;
+  right: 110%;
+  background-color: rgba(0, 0, 0, 0.77);
+  font-family: 'Varela Round', sans-serif;
+  color: ghostwhite;
+  font-size: 12px;
+  /* i couldn't figure out how to use flex to automate the width of the tooltip
+  box, and i was running out of time, so i just manually stuck it in there. */
+  width: 125px;
+  text-align: right;
+  padding: 3px 5px;
+  margin-left: 3px;
+  border-radius: 4px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.listened {
+  font-weight: bold;
+  color: magenta;}
