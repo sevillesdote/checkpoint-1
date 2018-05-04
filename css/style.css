@@ -1,11 +1,10 @@
-/* to do:
-(if time) figure out how to change tooltip box to flex auto-width */
 html{
   font-family: 'Varela', sans-serif;
+  text-align: center;
 }
 main{
   margin: auto 0;
-  padding: 100px 200px;
+  padding: 10% 10%;
   height: 100%;
   /* All of the similiar sites I checked out had dark backgrounds sooooooo...
   I went for it :) */
@@ -16,11 +15,18 @@ main{
   /* background: no-repeat center fixed, linear-gradient (to right, #262626, #000000); */
   color: gainsboro;
 }
+main p, main h2{
+  text-align: justify;
+}
 a{
   text-decoration: none;
   color: ghostwhite;
-  /*This makes the text of links inside buttons white too... i made a child
-  class selector specifically for button links*/
+}
+a:hover {
+  color: orange;
+}
+a:visited {
+  color: dimgray;
 }
 .topbox{
   position: fixed;
@@ -45,8 +51,6 @@ a{
 }
 .topbox li{
   float: left;
-  /* display: flex;
-  align-items: stretch; */
   box-sizing: border-box;
   list-style-type: none;
   padding: 10px;
@@ -134,7 +138,18 @@ input[type="radio"]{
 }
 .img-gradient{
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
+}
+/* i had some nice img-gradient effects on the pictures, but i couldn't figure
+out how to keep the gradients while also scaling the pictures to the width of <main>;
+so i commented them out below. ultimately it was better to turn off inline-block above
+than to keep the gradients on badly-sized pictures. if you uncomment all 3 of the
+classes below AND uncomment display: inline-block in .img-gradient above, you'll
+see what i mean. */
+/*
+a .img-gradient{
+  display: flex:
+  justify-content: justify;
 }
 .img-gradient:after{
   content: '';
@@ -146,13 +161,24 @@ input[type="radio"]{
   display: inline-block;
   background: linear-gradient(to right, rgba(48,48,48,1) 0%, rgba(255,255,255,0) 100%);
 }
+.img-gradient-left:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: linear-gradient(to left, rgba(48,48,48,1) 0%, rgba(255,255,255,0) 100%);
+} */
 .img-gradient img{
   display: block;
   z-index: -1;
   width: 100%;
+  height: 100%;
 }
-/* this creates a margin below a <p> whenever it precedes an image that has the
-.img-gradient class applied */
+/* this is supposed to create a margin below a <p> whenever it precedes an image
+that has the .img-gradient class applied. it was working, until it wasn't... */
 p ~ .img-gradient{
   margin: 50px 0 0 0;
 }
@@ -191,10 +217,6 @@ classes below weren't needed any more. */
 .every-3rd-of-3 {
   color: fuchsia;
 } */
-em{
-  color: #FF0000;
-  font-style: italic;
-}
 .aug-em{
   color: orange;
   font-style: normal;

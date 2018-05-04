@@ -3,6 +3,7 @@
   accessibility check
   styling for visited/ hovered etc. links
   remove <em> styling from css once all the comments have been accounted for
+  crop background photo for builds
  -->
 <html lang="en" dir="ltr" xmlns="http://www.w3.org/2000/svg">
   <head>
@@ -13,9 +14,9 @@
 <link href="https://fonts.googleapis.com/css?family=Varela|Varela+Round"
 rel="stylesheet">  </head>
   <body>
-    <header>
+    <header role="banner">
       <div class="topbox clearfix">
-        <nav>
+        <nav role="navigation">
           <div class="text-nav">
             <ul>
               <li>
@@ -119,7 +120,7 @@ button links, but i have to move on. -->
         </div>
         <a  class="img-gradient" href="builds/build1.html" target="_blank"
         title="(psst... click on the pic to see the build i made for this screenshot)">
-          <img src="builds/build-images/build1a.png" alt="aug screenshot">
+          <img src="builds/build-images/build1a.png" alt="screen shot of aug app">
         </a>
       </section>
       <section>
@@ -138,7 +139,7 @@ button links, but i have to move on. -->
         </p>
         <a  class="img-gradient" href="builds/build2.html" target="_blank"
         title="(psst... click on the pic to see the build i made for this screenshot)">
-            <img src="builds/build-images/build2a.png" alt="aug screenshot">
+            <img src="builds/build-images/build2a.png" alt="screenshot of aug app">
         </a>
         <h2>See what you hear.</h2>
         <p><em class="aug-em">aug's</em> main dashboard is a simple mosaic of all the releases you've
@@ -146,9 +147,12 @@ button links, but i have to move on. -->
           heard from that release, when, how many times, at which site(s) and
           for how long.
         </p>
-        <p>
-          <em>[expanded per-release detail: which tracks {tracks detented to top of list]; equal width progress bars with timestamp at the end; filled in with percentage of the track listened to {maybe in pink} and a listened-to timestamp. maybe repeat this view as a close up with a caption explaining "the time stamp helps you identify whether you listened to auditions at an online store, or the entire song at a streaming site."]</em>
-        </p>
+        <div>
+          <a  class="img-gradient img-gradient-left" href="builds/build3.html" target="_blank"
+          title="(psst... click on the pic to see the build i made for this screenshot)">
+              <img src="builds/build-images/build3b.png" alt="screenshot of aug app">
+          </a>
+        </div>
         <p>Configure <em class="aug-em">aug</em> the way <em>you</em> want. Organize your mosaic by when,
           where or how often you listen online.
         </p>
@@ -160,9 +164,9 @@ button links, but i have to move on. -->
         <p>Hide, block, delete or turn tracking on and off for certain sites,
           releases, even individual songs.
         </p>
-        <p>
+        <!-- <p>
           <em>[pic of settings? if i have time. maybe mock this part up in figma instead of creating in .html to save time.]</em>
-        </p>
+        </p> -->
         <h2>Easily explore more songs, releases & artists.</h2>
         <p>When you hear stuff you like, <em class="aug-em">aug</em> makes it easier than ever to
           explore more of the release and the artist. <em class="aug-em">aug</em> can automatically link you to
@@ -171,9 +175,9 @@ button links, but i have to move on. -->
           keep track of which songs you've already heard and which ones may be
           new to you, right in the external site.
         </p>
-        <p>
+        <!-- <p>
           <em>[pic of beatport, maybe itunes with links visited]</em>
-        </p>
+        </p> -->
         <h2>Curate your auditions.</h2>
         <p>Like to 'try before you buy?' <em class="aug-em">aug</em> can curate playlists at online
           stores to prioritize songs you haven't heard yet, or even remove the
@@ -182,9 +186,9 @@ button links, but i have to move on. -->
           you've already heard as visited links, so you can focus on the new
           stuff.
         </p>
-        <p>
+        <!-- <p>
           <em>[can i superimpose tool tips in juno playlist? too complicated in the short term?]</em>
-        </p>
+        </p> -->
         <h2>Break up with the songs you hate!</h2>
         <p>You've heard that song enough to last you a lifetime. Everybody else
           seems to love it (why?!), but guess what... you HATE it. Want to stop
@@ -195,12 +199,12 @@ button links, but i have to move on. -->
           with one click. Or you can unghost once, to check if they've changed
           their ways before you get back together.
         </p>
-        <p>
+        <!-- <p>
           <em>[maybe a ghost dialog: "Ghosting will skip [track name] audio in all playlists. You will still see [track name] listed, and can unghost once or permanently anytime. Continue?" 'Yes/ No' buttons; 'Don't warn me again' checkbox]</em>
-        </p>
-        <p>
+        </p> -->
+        <!-- <p>
           <em>[show ghosting {as a broken heart icon maybe? scooby doo ghost}  with an "unghost" link in the hover, maybe a date: you ghosted track name on date. unghost once; unghost]</em>
-        </p>
+        </p> -->
         <h2><em class="aug-em">aug</em> isn't just for online music stores... it's for the whole web.</h2>
         <p><em class="aug-em">aug</em> works on free streaming sites too. soundcloud, youtube, spotify
           free or premium... all are compatible with <em class="aug-em">aug</em>. If a song can be
@@ -220,7 +224,7 @@ button links, but i have to move on. -->
         </p>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <div class="footer-nav">
         <ul>
           <li>
